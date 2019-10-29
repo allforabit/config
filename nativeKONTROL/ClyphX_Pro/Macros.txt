@@ -1,0 +1,70 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[MACROS]
+
+# Below, you can specify a list of Macros to use in Action Lists.
+
+# The entry format is $MACRO_NAME$ = ACTION(s)
+
+# --------------------------------------------------------------------------------------
+# | ENTRY      |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | MACRO_NAME |  A unique one-word name for the Macro enclosed in dollar signs.
+# --------------------------------------------------------------------------------------
+# | ACTION(s)  |  The Action(s) to assign to the Macro.  You can also assign Macros to
+# |            |  other Macros.
+# --------------------------------------------------------------------------------------
+
+# See the Macros section of the manual for more info on Macros.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# Single line Macro:
+# $EX_MACRO_1$ = METRO
+
+# Multi line Macro type 1 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_2$ = ARM;
+#  SOLO;
+
+# Multi line Macro type 2 (note that each additional line needs to be indented by 1 space):
+# $EX_MACRO_3$ =
+#  ARM;
+#  SOLO;
+
+# --------------------------------------------------------------------------------------
+
+# >>>>>>>> DELETE THIS ENTIRE LINE AND START YOUR LIST HERE <<<<<<<<
+
+$a1$ = scene sel "a.1"; midi pc 1 0
+$a2$ = scene sel "a.2"; midi pc 1 1
+$a3$ = scene sel "a.3"; midi pc 1 2
+$a4$ = scene sel "a.4"; midi pc 1 3
+$b1$ = scene sel "b.1"; midi pc 1 4
+$b2$ = scene sel "b.2"; midi pc 1 5
+$b3$ = scene sel "b.3"; midi pc 1 6
+$b4$ = scene sel "b.4"; midi pc 1 7
+$c1$ = scene sel "c.1"; midi pc 1 8
+$c2$ = scene sel "c.2"; midi pc 1 9
+$c3$ = scene sel "c.3"; midi pc 1 10
+$c4$ = scene sel "c.4"; midi pc 1 11
+$d1$ = scene sel "d.1"; midi pc 1 12
+$d2$ = scene sel "d.2"; midi pc 1 13
+$d3$ = scene sel "d.3"; midi pc 1 14
+$d4$ = scene sel "d.4"; midi pc 1 15
+$snapall$ = 1-8/snap dev(all) mix+ play

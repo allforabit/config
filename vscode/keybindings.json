@@ -1,0 +1,169 @@
+[
+  {
+    "key": "alt+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "alt+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "alt+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "alt+h",
+    "command": "list.collapse",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "list.expand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+a",
+    "command": "extension.vim_ctrl+a",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "extension.vim_ctrl+b",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+c",
+    "command": "extension.vim_ctrl+c",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "alt+d",
+    "command": "extension.vim_ctrl+d",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+e",
+    "command": "extension.vim_ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+f",
+    "command": "extension.vim_ctrl+f",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g",
+    "command": "extension.vim_ctrl+g",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "extension.vim_ctrl+i",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "extension.vim_ctrl+j",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "extension.vim_ctrl+k",
+    "when": "editorTextFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+n",
+    "command": "extension.vim_ctrl+n",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+o",
+    "command": "extension.vim_ctrl+o",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+p",
+    "command": "extension.vim_ctrl+p",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "extension.vim_ctrl+r",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "extension.vim_ctrl+t",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+u",
+    "command": "extension.vim_ctrl+u",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+v",
+    "command": "extension.vim_ctrl+v",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "extension.vim_ctrl+w",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "extension.vim_ctrl+x",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+y",
+    "command": "extension.vim_ctrl+y",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+[",
+    "command": "extension.vim_ctrl+[",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+]",
+    "command": "extension.vim_ctrl+]",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.terminal.new",
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.showAllSymbols"
+  }
+]
