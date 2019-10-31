@@ -1260,7 +1260,7 @@
   // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
-  "workbench.colorTheme": "Solarized Light",
+  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
   "workbench.activityBar.visible": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
@@ -1364,11 +1364,12 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "window.zoomLevel": -0.5,
   "files.associations": {
     "*.jsonld": "json"
   },
   "ahk.onSave.run": true,
-  "vim.useCtrlKeys": false
+  "vim.useCtrlKeys": false,
+  "vim.foldfix": true
 }
