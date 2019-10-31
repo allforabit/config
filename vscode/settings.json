@@ -1261,7 +1261,7 @@
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
   "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
   "editor.fontLigatures": true,
