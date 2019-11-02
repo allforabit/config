@@ -3,9 +3,9 @@ SetTitleMatchMode, 2 ; match part of the title
 Return
 
 #b:: ;Browser (vivaldi)
-if WinExist("ahk_exe vivaldi.exe")
+if WinExist("ahk_exe brave.exe")
 {
-    if WinActive("ahk_exe vivaldi.exe")
+    if WinActive("ahk_exe brave.exe")
     {
         SendInput !{Esc}
     }
@@ -14,14 +14,14 @@ if WinExist("ahk_exe vivaldi.exe")
     return
 }
 else
-    Run C:\Users\kevno\AppData\Local\Vivaldi\Application\Vivaldi.exe
+    Run "C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe"
 return
 
 
 #c:: ;Chromium
-if WinExist("Chrome")
+if WinExist("ahk_exe chrome.exe")
 {
-    if WinActive("Chrome")
+    if WinActive("ahk_exe chrome.exe")
     {
         SendInput !{Esc}
     }
@@ -49,22 +49,6 @@ else
     Run "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
 return
 
-#e:: ;Emacs
-if WinExist("ahk_class Emacs")
-{
-    if WinActive("ahk_class Emacs")
-    {
-        SendInput !{Esc}
-    }
-    else
-        WinActivate
-    return
-}
-else
-    Run  C:\emacs\bin\runemacs.exe
-return
-
-
 #v:: ;Visual studio code
 if WinExist("Visual Studio Code")
 {
@@ -79,5 +63,3 @@ if WinExist("Visual Studio Code")
 else
     Run C:\Program Files\Microsoft VS Code\Code.exe
 return
-
-; Run C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
