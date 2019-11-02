@@ -50,9 +50,9 @@ else
 return
 
 #v:: ;Visual studio code
-if WinExist("Visual Studio Code")
+if WinExist("ahk_exe code.exe")
 {
-    if WinActive("Visual Studio Code")
+    if WinActive("ahk_exe code.exe")
     {
         SendInput !{Esc}
     }
@@ -61,5 +61,5 @@ if WinExist("Visual Studio Code")
     return
 }
 else
-    Run C:\Program Files\Microsoft VS Code\Code.exe
+    Run "C:\Users\kevno\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return

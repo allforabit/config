@@ -185,5 +185,10 @@
     "key": "ctrl+space",
     "command": "-toggleSuggestionDetails",
     "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
   }
 ]
