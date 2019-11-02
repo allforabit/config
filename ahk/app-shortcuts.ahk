@@ -46,7 +46,7 @@ if WinExist("ahk_class MozillaWindowClass")
     return
 }
 else
-    Run "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
+    Run "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
 #v:: ;Visual studio code
