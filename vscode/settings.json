@@ -1260,7 +1260,7 @@
   // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
-  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+  "workbench.colorTheme": "Solarized Light",
   "workbench.activityBar.visible": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
@@ -1371,5 +1371,10 @@
   },
   "ahk.onSave.run": true,
   "vim.useCtrlKeys": false,
-  "vim.foldfix": true
+  "vim.foldfix": true,
+  "github.username": "allforabit",
+  "files.eol": "\n",
+  "git.postCommitCommand": "sync",
+  "git.rebaseWhenSync": true,
+  "git.confirmSync": false
 }

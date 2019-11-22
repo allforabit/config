@@ -49,6 +49,22 @@ else
     Run "C:\Program Files\Mozilla Firefox\firefox.exe"
 return
 
+
+#m:: ;MS edge
+if WinExist("ahk_exe msedge.exe")
+{
+    if WinActive("ahk_exe msedge.exe")
+    {
+        SendInput !{Esc}
+    }
+    else
+        WinActivate
+    return
+}
+else
+    Run "C:\Program Files (x86)\Microsoft\Edge Beta\Application\edge.exe"
+return
+
 #v:: ;Visual studio code
 if WinExist("ahk_exe code.exe")
 {
