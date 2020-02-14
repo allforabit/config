@@ -988,8 +988,7 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "window.zoomLevel": -0.5,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
   "files.associations": {
     "*.jsonld": "json"
   },
@@ -1001,7 +1000,13 @@
   "git.postCommitCommand": "sync",
   "git.rebaseWhenSync": true,
   "git.confirmSync": false,
-  "wallaby.startAutomatically": false,
   "debug.node.autoAttach": "on",
-  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "workbench.editor.showTabs": false,
+  "window.zoomLevel": -0.5,
+  "editor.suggest.showSnippets": false,
+  "breadcrumbs.enabled": true,
+  "html.mirrorCursorOnMatchingTag": false,
+  "nxConsole.enableTelemetry": false,
+  "githubPullRequests.telemetry.enabled": false
 }
