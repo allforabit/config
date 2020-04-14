@@ -1,0 +1,30 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+}
+
+// TODO figure out how to add this in
+// /* Core CSS required for Ionic components to work properly */
+// import "@ionic/react/css/core.css";
+// import "@ionic/react/css/display.css";
+// import "@ionic/react/css/flex-utils.css";
+// import "@ionic/react/css/float-elements.css";
+// /* Basic CSS for apps built with Ionic */
+// import "@ionic/react/css/normalize.css";
+// /* Optional CSS utils that can be commented out */
+// import "@ionic/react/css/padding.css";
+// import "@ionic/react/css/structure.css";
+// import "@ionic/react/css/text-alignment.css";
+// import "@ionic/react/css/text-transformation.css";
+// import "@ionic/react/css/typography.css";

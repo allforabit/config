@@ -911,7 +911,6 @@
   "editor.formatOnType": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "npm.packageManager": "yarn",
   "javascript.referencesCodeLens.enabled": false,
   "javascript.format.enable": true,
   "html.autoClosingTags": true,
@@ -989,7 +988,7 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "files.associations": {
     "*.jsonld": "json"
   },
@@ -1013,5 +1012,10 @@
   "breadcrumbs.enabled": true,
   "html.mirrorCursorOnMatchingTag": false,
   "nxConsole.enableTelemetry": false,
-  "githubPullRequests.telemetry.enabled": false
+  "githubPullRequests.telemetry.enabled": false,
+  "task.problemMatchers.neverPrompt": {
+    "npm": true
+  },
+  "prettier.packageManager": "yarn",
+  "npm.packageManager": "yarn"
 }
