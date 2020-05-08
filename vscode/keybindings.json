@@ -261,4 +261,12 @@
     "command": "-editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible"
   },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.view.extension.wallaby"
+  },
 ]
