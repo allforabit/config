@@ -886,7 +886,7 @@
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
   "workbench.colorTheme": "Visual Studio Light",
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
   "editor.fontLigatures": true,

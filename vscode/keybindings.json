@@ -269,4 +269,8 @@
     "key": "ctrl+shift+w",
     "command": "workbench.view.extension.wallaby"
   },
+  {
+    "key": "ctrl+shift+alt+o",
+    "command": "outline.focus"
+  },
 ]
