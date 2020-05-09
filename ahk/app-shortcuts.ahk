@@ -7,28 +7,27 @@ SetTitleMatchMode, 1 ;  A window's title must start with the specified WinTitle 
 SetWorkingDir, %A_ScriptDir%
 SplitPath, A_ScriptName, , , , thisscriptname
 #MaxThreadsPerHotkey, 1 ; no re-entrant hotkey handling
-; DetectHiddenWindows, On
-; SetWinDelay, -1 ; Remove short delay done automatically after every windowing command except IfWinActive and IfWinExist
-; SetKeyDelay, -1, -1 ; Remove short delay done automatically after every keystroke sent by Send or ControlSend
-; SetMouseDelay, -1 ; Remove short delay done automatically after Click and MouseMove/Click/Drag
+
 #Persistent
-
-; SetTimer, AutoHideChrome, 500
+SetTimer, AutoToggleInspector, 500
 ; return
 
-; TODO return early from these
-; TODO check if chrome is actually open
-; TODO some consideration for when you chrome is active
-; TODO find a way to hide chrome
-; AutoHideChrome:
-; if WinActive("ahk_exe code.exe") {
-;     WinRestore, ahk_exe chrome.exe
-;     WinActivate, ahk_exe code.exe
-; }
-; else {
-;     WinMinimize, ahk_exe chrome.exe
-; }
-; return
+ShowDevTools := false
+
+AutoToggleInspector:
+if(ShowDevTools) {
+    if WinActive("ahk_exe code.exe") {
+        Winset, Top, , DevTools
+        Winset, AlwaysOnTop, on, DevTools
+    }
+    else {
+        if !WinActive("DevTools") {
+            WinSet, AlwaysOnTop, off, DevTools
+            WinSet, Bottom,, DevTools
+        }
+    }
+}
+return
 
 #b:: ;Browser (vivaldi)
 if WinExist("ahk_exe brave.exe")
@@ -120,11 +119,23 @@ else
     Run C:\Program Files\Git\git-bash.exe, C:\Users\kevno\Documents\GitHub
 return
 
-#i:: ; Chrome inspector
+
+$^+i:: ; Dev tools inspector
 if WinActive("DevTools")
 {
+    ShowDevTools := false
+    WinSet, Alwaysontop, off, DevTools
+    WinSet, Bottom,, DevTools
     SendInput !{Esc}
 }
-else
-    WinActivate, DevTools
+else {
+    if WinActive("ahk_exe code.exe") {
+        ShowDevTools := true
+        WinActivate, DevTools
+        WinSet, AlwaysOnTop, on, DevTools
+    }else{
+        send ^+i
+    }
+}
 return
+
