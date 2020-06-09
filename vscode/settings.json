@@ -885,7 +885,7 @@
   // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
-  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.activityBar.visible": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
