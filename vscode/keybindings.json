@@ -52,7 +52,7 @@
   {
     "key": "alt+c",
     "command": "extension.vim_ctrl+c",
-    "when": "editorTextFocus",
+    "when": "editorTextFocus"
   },
   {
     "key": "alt+d",
@@ -156,7 +156,7 @@
   },
   {
     "key": "ctrl+shift+'",
-    "command": "workbench.action.terminal.new",
+    "command": "workbench.action.terminal.new"
   },
   {
     "key": "ctrl+o",
@@ -273,4 +273,16 @@
     "key": "ctrl+shift+alt+o",
     "command": "outline.focus"
   },
+  {
+    "key": "ctrl+shift+alt+n",
+    "command": "workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "nxConsole.focus"
+  }
 ]

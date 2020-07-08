@@ -10,7 +10,7 @@ SplitPath, A_ScriptName, , , , thisscriptname
 
 #Persistent
 SetTimer, AutoToggleInspector, 500
-; return
+return
 
 ShowDevTools := false
 
@@ -47,11 +47,13 @@ return
 
 #c:: ;Chromium
 if WinExist("ahk_exe chrome.exe") {
-    if WinActive("ahk_exe chrome.exe") and !WinActive("DevTools") {
+    if WinActive("ahk_exe chrome.exe") and !WinActive("DevTools")
+    {
         SendInput !{Esc}
-    } else {
-        WinActivate, ahk_exe chrome.exe,, DevTools
     }
+    else
+        WinActivate, ahk_exe chrome.exe,, DevTools
+    return
 } else {
     Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 }
@@ -77,12 +79,12 @@ return
 #m:: ;MS edge
 if WinExist("ahk_exe msedge.exe")
 {
-    if WinActive("ahk_exe msedge.exe")
+    if WinActive("ahk_exe msedge.exe") and !WinActive("DevTools") 
     {
         SendInput !{Esc}
     }
     else
-        WinActivate
+        WinActivate, ahk_exe msedge.exe,, DevTools
     return
 }
 else
@@ -129,13 +131,15 @@ if WinActive("DevTools")
     SendInput !{Esc}
 }
 else {
-    if WinActive("ahk_exe code.exe") {
+    if WinActive("ahk_exe code.exe")
+    {
         ShowDevTools := true
         WinActivate, DevTools
         WinSet, AlwaysOnTop, on, DevTools
-    }else{
-        send ^+i
     }
+    else
+        send ^+i
+    return
 }
 return
 

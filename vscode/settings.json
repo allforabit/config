@@ -885,8 +885,8 @@
   // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "editor.tabSize": 2,
   "telemetry.enableTelemetry": false,
-  "workbench.colorTheme": "Visual Studio Light",
-  "workbench.activityBar.visible": true,
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.activityBar.visible": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorBlinking": "solid",
   "editor.fontLigatures": true,
@@ -1062,5 +1062,6 @@
   "materialTheme.accent": "Breaking Bad",
   "gutterpreview.imagePreviewMaxHeight": 300,
   "diffEditor.renderSideBySide": false,
-  "debug.toolBarLocation": "docked"
+  "debug.toolBarLocation": "docked",
+  "editor.codeActionsOnSave": null
 }
