@@ -998,7 +998,6 @@
   "files.eol": "\n",
   "git.rebaseWhenSync": true,
   "git.confirmSync": false,
-  "debug.node.autoAttach": "on",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "gitlens.keymap": "none",
   "workbench.editor.showTabs": false,
@@ -1006,7 +1005,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.zoomLevel": -0.5,
-  "editor.suggest.showSnippets": false,
   "breadcrumbs.enabled": true,
   "html.mirrorCursorOnMatchingTag": false,
   "nxConsole.enableTelemetry": false,
@@ -1063,5 +1061,6 @@
   "gutterpreview.imagePreviewMaxHeight": 300,
   "diffEditor.renderSideBySide": false,
   "debug.toolBarLocation": "docked",
-  "editor.codeActionsOnSave": null
+  "editor.codeActionsOnSave": null,
+  "gistpad.playgrounds.layout": "splitLeft"
 }
