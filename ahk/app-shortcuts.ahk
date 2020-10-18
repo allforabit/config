@@ -106,22 +106,6 @@ else
     Run "C:\Users\kevno\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
-#t::
-if WinExist("ahk_exe mintty.exe")
-{
-    if WinActive("ahk_exe mintty.exe")
-    {
-        SendInput !{Esc}
-    }
-    else
-        WinActivate
-    return
-}
-else
-    Run C:\Program Files\Git\git-bash.exe, C:\Users\kevno\Documents\GitHub
-return
-
-
 $^+i:: ; Dev tools inspector
 if WinActive("DevTools")
 {
