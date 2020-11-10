@@ -106,6 +106,21 @@ else
     Run "C:\Users\kevno\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
+#u:: ;Unit
+if WinExist("ahk_exe Unity.exe")
+{
+    if WinActive("ahk_exe Unity.exe")
+    {
+        SendInput !{Esc}
+    }
+    else
+        WinActivate
+    return
+}
+else
+    Run "C:\Program Files\Unity\Hub\Editor\2019.4.13f1\Editor\Unity.exe"
+return
+
 $^+i:: ; Dev tools inspector
 if WinActive("DevTools")
 {
@@ -126,4 +141,6 @@ else {
     return
 }
 return
+
+
 
