@@ -29,6 +29,21 @@ if(ShowDevTools) {
 }
 return
 
+#a:: ;Affinity designer
+if WinExist("ahk_exe Designer.exe")
+{
+    if WinActive("ahk_exe Designer.exe")
+    {
+        SendInput !{Esc}
+    }
+    else
+        WinActivate
+    return
+}
+else
+    Run "C:\Program Files\Affinity\Designer\Designer.exe"
+return
+
 #b:: ;Browser (vivaldi)
 if WinExist("ahk_exe brave.exe")
 {
