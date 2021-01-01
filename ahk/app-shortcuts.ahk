@@ -56,7 +56,7 @@ if WinExist("ahk_exe brave.exe")
     return
 }
 else
-    Run "C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe"
+    Run "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 return
 
 
@@ -70,7 +70,7 @@ if WinExist("ahk_exe chrome.exe") {
         WinActivate, ahk_exe chrome.exe,, DevTools
     return
 } else {
-    Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe"
 }
 return
 
@@ -121,10 +121,10 @@ else
     Run "C:\Users\kevno\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
-#t:: ;Visual studio code
-if WinExist("ahk_exe mintty.exe")
+#u:: ;Unit
+if WinExist("ahk_exe Unity.exe")
 {
-    if WinActive("ahk_exe mintty.exe")
+    if WinActive("ahk_exe Unity.exe")
     {
         SendInput !{Esc}
     }
@@ -133,9 +133,8 @@ if WinExist("ahk_exe mintty.exe")
     return
 }
 else
-    Run C:\Program Files\Git\git-bash.exe, C:\Users\kevno\Documents\GitHub
+    Run "C:\Program Files\Unity\Hub\Editor\2019.4.13f1\Editor\Unity.exe"
 return
-
 
 $^+i:: ; Dev tools inspector
 if WinActive("DevTools")
@@ -157,4 +156,6 @@ else {
     return
 }
 return
+
+
 
