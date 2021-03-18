@@ -56,7 +56,7 @@ if WinExist("ahk_exe brave.exe")
     return
 }
 else
-    Run "C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe"
+    Run "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
 return
 
 
@@ -70,7 +70,7 @@ if WinExist("ahk_exe chrome.exe") {
         WinActivate, ahk_exe chrome.exe,, DevTools
     return
 } else {
-    Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe"
 }
 return
 
