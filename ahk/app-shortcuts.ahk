@@ -7,6 +7,8 @@ SetTitleMatchMode, 1 ;  A window's title must start with the specified WinTitle 
 SetWorkingDir, %A_ScriptDir%
 SplitPath, A_ScriptName, , , , thisscriptname
 #MaxThreadsPerHotkey, 1 ; no re-entrant hotkey handling
+EnvGet, hdrive, Homedrive
+EnvGet, hpath, Homepath
 
 #Persistent
 SetTimer, AutoToggleInspector, 500
@@ -44,7 +46,7 @@ else
     Run "C:\Program Files\Affinity\Designer\Designer.exe"
 return
 
-#b:: ;Browser (vivaldi)
+#b:: ;Browser (brave)
 if WinExist("ahk_exe brave.exe")
 {
     if WinActive("ahk_exe brave.exe")
@@ -118,7 +120,7 @@ if WinExist("ahk_exe code.exe")
     return
 }
 else
-    Run "C:\Users\kevno\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    Run % hdrive hpath "\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
 #u:: ;Unit
