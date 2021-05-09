@@ -1,0 +1,5 @@
+#[ideavim.files]
+#"ideavim/ideavimrc" = "~/.ideavimrc"
+
+[windowsTerminalQuake.files]
+"windows-terminal-quake.json" = "~/windows-terminal-quake.json"
