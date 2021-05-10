@@ -7,9 +7,6 @@ SetTitleMatchMode, 1 ;  A window's title must start with the specified WinTitle 
 SetWorkingDir, %A_ScriptDir%
 SplitPath, A_ScriptName, , , , thisscriptname
 #MaxThreadsPerHotkey, 1 ; no re-entrant hotkey handling
-EnvGet, hdrive, Homedrive
-EnvGet, hpath, Homepath
-
 #Persistent
 SetTimer, AutoToggleInspector, 500
 return
@@ -120,6 +117,8 @@ if WinExist("ahk_exe code.exe")
     return
 }
 else
+    EnvGet, hdrive, Homedrive
+    EnvGet, hpath, Homepath
     Run % hdrive hpath "\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
