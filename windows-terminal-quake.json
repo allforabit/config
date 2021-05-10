@@ -1,0 +1,10 @@
+{
+  "HotKeys": [
+    {
+      "Modifiers": "Windows",
+      "Key": "T"
+    }
+  ],
+  "StartHidden": true,
+  "ToggleDurationMs": 0
+}

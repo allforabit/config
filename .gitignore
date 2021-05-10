@@ -2,3 +2,6 @@
 globalStorage
 workspaceStorage
 ahk/debug.log
+.dotter/local.toml
+.dotter/cache.toml
+.dotter/cache
