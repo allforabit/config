@@ -6,4 +6,4 @@
 Send {F13}
 return
 
-^SPACE::  Winset, Alwaysontop, , A
+;^SPACE::  Winset, Alwaysontop, , A
